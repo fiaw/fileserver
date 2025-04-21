@@ -9,31 +9,14 @@
 #include <sqlite3.h>
 #include <zip.h> // 需要安装libzip-dev：sudo apt-get install libzip-dev
 
-//# sudo apt-get install libavahi-client-dev libavahi-common-dev
-//g++ -o x -I. c.cpp  -ljsoncpp
-//g++ -std=c++20 -o x -I. c.cpp -ljsoncpp
+
 /*
-   mkdir build
-   cd build
-   cmake -DCMAKE_BUILD_TYPE=Release -DJSONCPP_BUILD_STATIC=ON ..
-   sudo apt install cmake
-   cmake -DCMAKE_BUILD_TYPE=Release -DJSONCPP_BUILD_STATIC=ON ..
-   sudo make install
-   export LD_LIBRARY_PATH=/lib/x86_64-linux-gnu:$LD_LIBRARY_PATH
-   g++ -std=c++20 -o x -I. c.cpp -L/lib/x86_64-linux-gnu -ljsoncpp -lssl -lcrypto
-   g++ -std=c++20 -o x -I. c.cpp -L/lib/x86_64-linux-gnu -ljsoncpp -static 
-   g++ -std=c++20 -o x -I. c.cpp -L/lib/x86_64-linux-gnu -ljsoncpp -lssl -lcrypto -lz -lzstd -ldl -lpthread -lavahi-client -lavahi-common -static
+  
    g++ -std=c++20 -o x -I. fileserver.cpp -L/lib/x86_64-linux-gnu -ljsoncpp -lssl -lcrypto -lz -lzstd -ldl   -lsqlite3
 
   g++ -std=c++20 -o x fileserver.cpp -I. -L/usr/lib/x86_64-linux-gnu -ljsoncpp -lssl -lcrypto -lsqlite3 -lzip -lzstd -lz -ldl -static
   
-   # 使用手动编译的静态库
-	g++ -std=c++20 -o x -I. fileserver.cpp \
-	-I/usr/local/include \
-	-L/usr/local/lib \
-	-lzip -lssl -lcrypto -lsqlite3 \
-	-static
-	
+
 
   file ./x
 */
