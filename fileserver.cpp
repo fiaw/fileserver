@@ -5,7 +5,6 @@
 #include <ctime>
 #include <json/json.h>
 #include <chrono>
-// 添加在现有头文件之后
 #include <favourite_ico.h>
 #include <sqlite3.h>
 #include <zip.h> // 需要安装libzip-dev：sudo apt-get install libzip-dev
